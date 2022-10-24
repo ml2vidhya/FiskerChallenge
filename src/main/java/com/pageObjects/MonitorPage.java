@@ -13,7 +13,6 @@ public class MonitorPage {
 	
 	private By lgMonitorLink = By.linkText("LG");
 	private By sortbySelect = By.id("s-result-sort-select");
-	//private By getSecondItem = By.cssSelector("div[data-index='2']")
 	
 	public WebElement getLGMonitorLink() {
 		return driver.findElement(lgMonitorLink);

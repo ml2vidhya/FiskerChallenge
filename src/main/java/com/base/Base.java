@@ -11,12 +11,14 @@ public class Base {
 
 	public WebDriver driver;
 	public Properties prop;
-
+	public String url;
+	
 	public WebDriver initializeDriver() throws IOException {
 
 		prop = loadConfig();
 		String browserName = prop.getProperty("browser");
-
+		url = prop.getProperty("url");
+		
 		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "/src/main/resources/chromedriver");

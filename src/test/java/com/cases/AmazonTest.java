@@ -45,7 +45,8 @@ public class AmazonTest extends Base {
 	public void GetSecondHighestPriceMonitorItemDetails () throws InterruptedException {
 		
 		log.info("Test Start");
-		actions.navigateTo("https://www.amazon.com");
+		
+		actions.navigateTo(url);
 		
 		actions.click(hp.getHamburgerMenu());
 		
@@ -75,8 +76,6 @@ public class AmazonTest extends Base {
 
 	}
 	
-
-
 	@AfterTest
 	public void teardown() {
 		driver.close();

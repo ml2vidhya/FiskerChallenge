@@ -13,11 +13,6 @@ public class HomePage {
 	}
 	
 	// All objects should be defined here
-	private By menuBtn = By.cssSelector("a[id='menu-toggle']");
-	private By login = By.cssSelector("a[href*='login']");
-	private By title = By.cssSelector("h1");
-	private By footer = By.cssSelector("footer");
-	
 	private By hamburgerMenu  = By.id("nav-hamburger-menu");
 	private By seeAllMenuItem = By.cssSelector("a[class='hmenu-item hmenu-compressed-btn']");
 	private By computerMenuItem = By.cssSelector("a[data-menu-id='16']");
@@ -38,22 +33,6 @@ public class HomePage {
 	
 	public WebElement getMonitorMenuItem() {
 		return driver.findElement(monitorMenuItem);
-	}
-	
-	public WebElement getMenuBtn() {
-		return driver.findElement(menuBtn);
-	}
-	
-	public WebElement getLogin() {
-		return driver.findElement(login);
-	}
-	
-	public WebElement getTitle() {
-		return driver.findElement(title);
-	}
-	
-	public WebElement getFooter() {
-		return driver.findElement(footer);
 	}
 
 }

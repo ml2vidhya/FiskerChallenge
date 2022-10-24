@@ -22,7 +22,6 @@ public class ExtentReporterNG {
 		try {
 			extent.setSystemInfo("Machine", InetAddress.getLocalHost().getHostName());
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			System.out.println("Unable to capture hostname.");
 		}
 		
